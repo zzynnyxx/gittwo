@@ -1,14 +1,69 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>John Doe Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Learning git and github</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore molestiae magni culpa a ullam autem, aut, obcaecati laudantium molestias id dolores quaerat quo sequi quos labore ipsam deserunt aliquid at?</p>
-    <h2>ummh loading
-        
-    </h2>
+
+<header>
+    <div class="container">
+        <h1>John Doe</h1>
+        <p>Web Developer & Designer</p>
+        <button id="menu-toggle">Menu</button>
+    </div>
+</header>
+
+<nav id="navbar">
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm a web developer with experience in building clean and functional websites. I enjoy creating user-friendly and responsive designs.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item" onclick="openProject('Project 1')">
+                <h3>Project 1</h3>
+                <p>Click to learn more.</p>
+            </div>
+            <div class="portfolio-item" onclick="openProject('Project 2')">
+                <h3>Project 2</h3>
+                <p>Click to learn more.</p>
+            </div>
+            <div class="portfolio-item" onclick="openProject('Project 3')">
+                <h3>Project 3</h3>
+                <p>Click to learn more.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p id="form-response"></p>
+    </section>
+</main>
+
+<footer>
+    &copy; 2025 John Doe. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
